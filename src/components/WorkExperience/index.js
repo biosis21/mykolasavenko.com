@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
-import {Col, Row} from "reactstrap";
 
-import SectionHeader from "../SectionHeader";
+import Section from "../Section";
 import WorkExperienceItem from "../WorkExperienceItem";
 import {getJobs} from "../../services/WorkExperienceService";
 
@@ -15,24 +14,17 @@ const WorkExperience = () => {
 
     const renderedList = jobs.map((job) => {
         return (
-            <Col
+            <WorkExperienceItem
                 key={job.id}
-                xs="12"
-            >
-                <WorkExperienceItem job={job} />
-            </Col>
+                job={job}
+            />
         );
     });
 
     return (
-        <section>
-            <Row>
-                <Col xs="12">
-                    <SectionHeader title="Work Experience" />
-                </Col>
-                {renderedList}
-            </Row>
-        </section>
+        <Section title="Work Experience">
+            {renderedList}
+        </Section>
     );
 };
 

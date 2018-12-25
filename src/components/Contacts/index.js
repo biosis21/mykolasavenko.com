@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {Col, Row} from "reactstrap";
 
-import SectionHeader from "../SectionHeader";
 import {getContacts} from "../../services/WorkExperienceService";
+import Section from "../Section";
 
 const Contacts = () => {
 
@@ -13,36 +12,25 @@ const Contacts = () => {
     });
 
     return (
-        <section>
-            <Row>
-                <Col xs="12">
-                    <SectionHeader title="Contacts" />
-                </Col>
+        <Section title="Contacts">
+            <address>
+                <strong>Address</strong>
+                <br />
+                {contacts.address}
+            </address>
 
-                <Col xs="6">
+            <address>
+                <strong>Phone Number</strong>
+                <br />
+                {contacts.phoneNumber}
+            </address>
 
-                    <address>
-                        <strong>Address</strong>
-                        <br />
-                        {contacts.address}
-                    </address>
-
-                    <address>
-                        <strong>Phone Number</strong>
-                        <br />
-                        {contacts.phoneNumber}
-                    </address>
-
-                    <address>
-                        <strong>Email</strong>
-                        <br />
-                        <a href={`mailto:${contacts.email}`}>{contacts.email}</a>
-                    </address>
-
-                </Col>
-
-            </Row>
-        </section>
+            <address>
+                <strong>Email</strong>
+                <br />
+                <a href={`mailto:${contacts.email}`}>{contacts.email}</a>
+            </address>
+        </Section>
     );
 };
 

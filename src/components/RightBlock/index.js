@@ -10,7 +10,6 @@ import WorkExperience from "../WorkExperience";
 const RightBlock = () => {
 
     return (
-
         <Container
             fluid={true}
             className="right-block"
