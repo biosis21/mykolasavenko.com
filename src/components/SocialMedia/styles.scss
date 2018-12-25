@@ -1,0 +1,21 @@
+.social-media {
+  padding: 0;
+  list-style: none;
+   &__item {
+     display: inline-block;
+     margin: 0 15px;
+   }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: -25%;
+}
+
+.fa:hover {
+  text-decoration: none;
+}

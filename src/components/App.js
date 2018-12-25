@@ -1,16 +1,20 @@
 import React from 'react';
-import {Col, Row} from 'reactstrap';
-import RightBlock from './RightBlock/RightBlock';
+import {Col, Row, Container} from 'reactstrap';
+import RightBlock from './RightBlock';
+import LeftBlock from './LeftBlock';
 
 const App = () => {
     return (
-
-        <Row style={{"height": "100vh"}}>
-            <Col>My photo</Col>
-            <Col>
-                <RightBlock/>
-            </Col>
-        </Row>
+        <Container fluid={true}>
+            <Row noGutters={true} style={{'height': '100vh'}}>
+                <Col>
+                    <LeftBlock />
+                </Col>
+                <Col>
+                    <RightBlock />
+                </Col>
+            </Row>
+        </Container>
 
     );
 };
