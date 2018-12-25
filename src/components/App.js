@@ -1,8 +1,17 @@
 import React from 'react';
+import {Col, Row} from 'reactstrap';
+import RightBlock from './RightBlock/RightBlock';
 
 const App = () => {
     return (
-        <div>123</div>
+
+        <Row style={{"height": "100vh"}}>
+            <Col>My photo</Col>
+            <Col>
+                <RightBlock/>
+            </Col>
+        </Row>
+
     );
 };
 
