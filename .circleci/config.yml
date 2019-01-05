@@ -13,16 +13,16 @@ jobs:
         - run: npm install
         - run: npm run build
   deploy:
-    docker:
-      - image: circleci/node:10.14.0
-    working_directory: ~/repo
-    steps:
-      - run:
-          name: Install aws-cli
-          command: npm install -g aws-cli
-      - run:
-          name: Deploy to S3
-          command: aws s3 sync ./build s3://mykolasavenko.com --delete
+      docker:
+        - image: circleci/python:2.7-jessie
+      working_directory: ~/repo
+      steps:
+        - run:
+            name: Install awscli
+            command: sudo pip install awscli
+        - run:
+            name: Deploy to S3
+            command: aws s3 sync ./build s3://mykolasavenko.com --delete
 
 workflows:
   version: 2
