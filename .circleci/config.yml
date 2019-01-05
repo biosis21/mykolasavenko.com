@@ -26,7 +26,7 @@ jobs:
             command: sudo pip install awscli
         - run:
             name: Deploy to S3
-            command: ls -lsa
+            command: cd / && ls -lsa
             #command: aws s3 sync /tmp/build s3://mykolasavenko.com --delete
 
 workflows:
