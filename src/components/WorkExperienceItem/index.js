@@ -1,10 +1,8 @@
 import React from "react";
 
-const WorkExperienceItem = ({job}) => {
+import Location from "../Location";
 
-    const renderedLocations = job.locations.map((location, i) => (
-        <span key={i}>{location.city}, {location.country}</span>
-    ));
+const WorkExperienceItem = ({job}) => {
 
     const renderedDescriptions = job.descriptions.map((desc, i) => (<li key={i}>{desc}</li>));
 
@@ -12,9 +10,7 @@ const WorkExperienceItem = ({job}) => {
         <div>
             <h3>{job.position}</h3>
             <h4>{job.company}</h4>
-            <div>
-                {renderedLocations}
-            </div>
+            <Location locations={job.locations} />
             <small>{job.from} - {job.to || "Present"}</small>
             <ul>
                 {renderedDescriptions}

@@ -146,6 +146,12 @@ const EDUCATION = [
         fieldOfStudy: "Applied Physics",
         from: "01/09/2012",
         to: "01/08/2014",
+        locations: [
+            {
+                city: "Kyiv",
+                country: "Ukraine"
+            }
+        ],
     },
     {
         id: "1",
@@ -154,14 +160,26 @@ const EDUCATION = [
         fieldOfStudy: "Applied Physics",
         from: "01/09/2008",
         to: "01/08/2012",
+        locations: [
+            {
+                city: "Kyiv",
+                country: "Ukraine"
+            }
+        ],
     },
     {
         id: "0",
-        name: "Zamglay School",
+        name: "Zamhlai School",
         degree: "High School",
         fieldOfStudy: "Teaching English or French as a Second or Foreign Language",
         from: "01/09/1997",
         to: "01/08/2008",
+        locations: [
+            {
+                city: "Zamhlai",
+                country: "Ukraine"
+            }
+        ],
     }
 ];
 

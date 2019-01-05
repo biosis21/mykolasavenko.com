@@ -2,26 +2,23 @@ import React, {useEffect, useState} from "react";
 
 import {getEducation} from "../../services/WorkExperienceService";
 import Section from "../Section";
+import EducationItem from "../EducationItem";
 
 const Education = () => {
 
-    const [jobs, setJobs] = useState([]);
+    const [education, setEducation] = useState([]);
 
     useEffect(() => {
-        setJobs(getEducation());
+        setEducation(getEducation());
     });
 
-    // const renderedList = jobs.map((job) => {
-    //     return (
-    //             <WorkExperienceItem job={job} />
-    //     );
-    // });
+    const renderedList = education.map((ed) => <EducationItem key={ed.id} item={ed} />);
 
     return (
         <Section title="Education">
-
+            {renderedList}
         </Section>
-    );
+    )
 };
 
 export default Education;
