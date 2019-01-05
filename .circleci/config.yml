@@ -19,7 +19,7 @@ jobs:
     steps:
       - run:
           name: Install aws-cli
-          command: npm install aws-cli
+          command: npm install -g aws-cli
       - run:
           name: Deploy to S3
           command: aws s3 sync ./build s3://mykolasavenko.com --delete
