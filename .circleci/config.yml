@@ -10,24 +10,27 @@ jobs:
       working_directory: ~/repo
       steps:
         - checkout
+        - restore_cache:
+            keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
         - run: npm install
+        - save_cache:
+            paths:
+              - node_modules
+            key: v1-dependencies-{{ checksum "package.json" }}
         - run: npm run build
-        - store_artifacts:
-            path: ~/repo/build
-            destination: /tmp/build
   deploy:
       docker:
         - image: circleci/python:2.7-jessie
-      working_directory: ~/repo
+      working_directory: ~/circleci-docs
       steps:
-        - checkout
         - run:
             name: Install awscli
             command: sudo pip install awscli
         - run:
             name: Deploy to S3
-            command: cd /tmp && ls -lsa
-            #command: aws s3 sync /tmp/build s3://mykolasavenko.com --delete
+            command: aws s3 sync build/ s3://mykolasavenko.com --recursive
 
 workflows:
   version: 2
