@@ -30,7 +30,7 @@ jobs:
             command: sudo pip install awscli
         - run:
             name: Deploy to S3
-            command: aws s3 sync build/ s3://mykolasavenko.com --recursive
+            command: aws s3 sync build/ s3://mykolasavenko.com --delete
 
 workflows:
   version: 2
