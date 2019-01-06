@@ -23,10 +23,7 @@ jobs:
         - persist_to_workspace:
             # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
             # taken to be the root directory of the workspace.
-            root: ~/repo
-            # Must be relative path from root
-            paths:
-              - build
+            root: build
   deploy:
       docker:
         - image: circleci/python:2.7-jessie
@@ -35,9 +32,11 @@ jobs:
         - run:
             name: Install awscli
             command: sudo pip install awscli
+        - attach_workspace:
+            at: /tmp/build
         - run:
             name: Deploy to S3
-            command: aws s3 sync build/ s3://mykolasavenko.com --delete
+            command: aws s3 sync /tmp/build/ s3://mykolasavenko.com --delete
 
 workflows:
   version: 2
@@ -47,6 +46,6 @@ workflows:
       - deploy:
           requires:
             - build
-          filters:
-            branches:
-              only: master
+      filters:
+        branches:
+          only: master
