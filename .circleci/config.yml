@@ -20,9 +20,13 @@ jobs:
               - node_modules
             key: v1-dependencies-{{ checksum "package.json" }}
         - run: npm run build
-        - run: ls -lsa
-        - store_artifacts:
-            path: ~/repo/build
+        - persist_to_workspace:
+          # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
+          # taken to be the root directory of the workspace.
+          root: ~/repo
+          # Must be relative path from root
+          paths:
+            - build
   deploy:
       docker:
         - image: circleci/python:2.7-jessie
