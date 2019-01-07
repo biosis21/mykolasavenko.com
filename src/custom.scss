@@ -7,3 +7,7 @@ $link-hover-color: #95a5a6;
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
+
+.flex-even {
+  flex: 1;
+}

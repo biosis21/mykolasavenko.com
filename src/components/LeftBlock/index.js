@@ -7,7 +7,7 @@ const LeftBlock = () => {
 
     return (
 
-        <div style={{height: "100%", background: "gray", position: "relative"}}>
+        <div className="left-block">
             <div className="profile-image"></div>
 
             <div className="content text-center profile-desc">

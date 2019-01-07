@@ -1,6 +1,5 @@
 import React from "react";
-import {Container} from "reactstrap";
-import './styles.scss';
+import "./styles.scss";
 
 import AboutMe from "../AboutMe";
 import Contacts from "../Contacts";
@@ -10,16 +9,12 @@ import WorkExperience from "../WorkExperience";
 const RightBlock = () => {
 
     return (
-        <Container
-            fluid={true}
-            className="right-block"
-        >
+        <div className="right-block">
             <AboutMe />
             <WorkExperience />
             <Education />
             <Contacts />
-
-        </Container>
+        </div>
     );
 };
 
