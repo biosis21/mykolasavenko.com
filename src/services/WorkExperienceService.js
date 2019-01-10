@@ -1,3 +1,5 @@
+import {useEffect, useState} from "react";
+
 const WORK_EXPERIENCE = [
     {
         id: "6",
@@ -207,17 +209,29 @@ const SOCIAL_MEDIA = [
 ];
 
 const CONTACTS = {
-    address: "2 Mykoly Amosova Street \n Kyiv, Ukraine",
+    address: "7B Bohdanivska Street, Kyiv, Ukraine",
     phoneNumber: "+380969538589",
     email: "mykola.savenko21@gmail.com"
 };
 
-export const getJobs = () => {
-    return WORK_EXPERIENCE;
+export const useJobs = () => {
+    const [jobs, setJobs] = useState([]);
+
+    useEffect(() => {
+        setJobs(WORK_EXPERIENCE);
+    }, []);
+
+    return jobs;
 };
 
-export const getEducation = () => {
-    return EDUCATION;
+export const useEducationList = () => {
+    const [education, setEducation] = useState([]);
+
+    useEffect(() => {
+        setEducation(EDUCATION);
+    }, []);
+
+    return education;
 };
 
 export const getSocialMedia = () => {

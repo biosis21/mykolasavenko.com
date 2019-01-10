@@ -1,24 +1,23 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 
-import {getEducation} from "../../services/WorkExperienceService";
 import Section from "../Section";
 import EducationItem from "../EducationItem";
+import {useEducationList} from "../../services/WorkExperienceService";
 
 const Education = () => {
 
-    const [education, setEducation] = useState([]);
+    const list = useEducationList();
 
-    useEffect(() => {
-        setEducation(getEducation());
-    });
-
-    const renderedList = education.map((ed) => <EducationItem key={ed.id} item={ed} />);
+    const renderList = list.map((ed) => <EducationItem
+        key={ed.id}
+        item={ed}
+    />);
 
     return (
         <Section title="Education">
-            {renderedList}
+            {renderList}
         </Section>
-    )
+    );
 };
 
 export default Education;

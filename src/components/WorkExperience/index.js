@@ -1,18 +1,14 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 import Section from "../Section";
 import WorkExperienceItem from "../WorkExperienceItem";
-import {getJobs} from "../../services/WorkExperienceService";
+import {useJobs} from "../../services/WorkExperienceService";
 
 const WorkExperience = () => {
 
-    const [jobs, setJobs] = useState([]);
+    const jobs = useJobs();
 
-    useEffect(() => {
-        setJobs(getJobs());
-    });
-
-    const renderedList = jobs.map((job) => {
+    const renderList = jobs.map((job) => {
         return (
             <WorkExperienceItem
                 key={job.id}
@@ -23,7 +19,7 @@ const WorkExperience = () => {
 
     return (
         <Section title="Work Experience">
-            {renderedList}
+            {renderList}
         </Section>
     );
 };
