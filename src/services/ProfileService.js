@@ -135,7 +135,7 @@ const WORK_EXPERIENCE = [
     {
         id: "0",
         title: "Trainee Web Developer",
-        company: "Information Computer Center, Taras Shevchenko National University of Kiev",
+        company: "Taras Shevchenko National University of Kiev",
         logo: "knu.png",
         link: "http://univ.kiev.ua",
         locations: [
