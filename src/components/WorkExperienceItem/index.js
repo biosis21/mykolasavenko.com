@@ -28,13 +28,12 @@ const WorkExperienceItem = ({job}) => {
                 </a>
             </Col>
             <Col>
-                <a
-                    href="#"
+                <h3
                     className="work-experience-item__title"
                     onClick={() => setCollapse(!collapse)}
                 >
-                    <h3>{job.title}</h3>
-                </a>
+                    {job.title}
+                </h3>
                 <h4>{job.company}</h4>
                 <Location locations={job.locations} />
                 <TimeRange
