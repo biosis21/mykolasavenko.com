@@ -1,34 +1,24 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 
-import {getContacts} from "../../services/WorkExperienceService";
 import Section from "../Section";
+import {useContacts} from "../../services/ProfileService";
 
 const Contacts = () => {
 
-    const [contacts, setJobs] = useState([]);
-
-    useEffect(() => {
-        setJobs(getContacts());
-    });
+    const {phoneNumber, email} = useContacts();
 
     return (
         <Section title="Contacts">
             <address>
-                <strong>Address</strong>
-                <br />
-                {contacts.address}
-            </address>
-
-            <address>
                 <strong>Phone Number</strong>
                 <br />
-                {contacts.phoneNumber}
+                {phoneNumber}
             </address>
 
             <address>
                 <strong>Email</strong>
                 <br />
-                <a href={`mailto:${contacts.email}`}>{contacts.email}</a>
+                <a href={`mailto:${email}`}>{email}</a>
             </address>
         </Section>
     );

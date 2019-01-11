@@ -1,10 +1,10 @@
 .social-media {
   padding: 0;
   list-style: none;
-   &__item {
-     display: inline-block;
-     margin: 0 15px;
-   }
+  &__item {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
 }
 
 .fa {
@@ -14,9 +14,10 @@
   text-align: center;
   text-decoration: none;
   text-indent: -25%;
+  color: #306aac;
 }
 
 .fa:hover {
   text-decoration: none;
-  color: #306aac;
+  color: #34495e;
 }

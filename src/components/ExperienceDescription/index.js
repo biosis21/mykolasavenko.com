@@ -1,13 +1,24 @@
 import React from "react";
+import {Collapse} from "reactstrap";
+
+import './styles.scss';
+
+import CollapseContext from "../../contexts/CollapseContext";
 
 const ExperienceDescription = ({descriptions}) => {
 
-    const renderedDescriptions = descriptions.map((desc, i) => (<li key={i}>{desc}</li>));
+    const renderDescriptions = descriptions.map((desc, i) => (<li key={i}>{desc}</li>));
 
     return (
-        <ul>
-            {renderedDescriptions}
-        </ul>
+        <CollapseContext.Consumer>
+            {(collapse) => (
+                <Collapse isOpen={collapse}>
+                    <ul className="experience-description">
+                        {renderDescriptions}
+                    </ul>
+                </Collapse>
+            )}
+        </CollapseContext.Consumer>
     );
 };
 

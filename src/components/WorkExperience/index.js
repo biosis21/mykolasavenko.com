@@ -2,13 +2,13 @@ import React from "react";
 
 import Section from "../Section";
 import WorkExperienceItem from "../WorkExperienceItem";
-import {useJobs} from "../../services/WorkExperienceService";
+import {useJobs} from "../../services/ProfileService";
 
 const WorkExperience = () => {
 
-    const jobs = useJobs();
+    const list = useJobs();
 
-    const renderList = jobs.map((job) => {
+    const renderList = list.map((job) => {
         return (
             <WorkExperienceItem
                 key={job.id}

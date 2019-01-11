@@ -6,22 +6,16 @@ import SocialMedia from "../SocialMedia";
 const LeftBlock = () => {
 
     return (
-
         <div className="left-block">
             <div className="profile-image"></div>
 
             <div className="content text-center profile-desc">
                 <h1>Hi, I am Mykola Savenko</h1>
 
-                <br />
-
-                <span>Lead Software Engineer</span>
-
                 <SocialMedia />
             </div>
 
         </div>
-
     );
 };
 

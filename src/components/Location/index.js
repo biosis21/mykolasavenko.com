@@ -2,13 +2,13 @@ import React from "react";
 
 const Location = ({locations}) => {
 
-    const renderedLocations = locations.map((location, i) => (
-        <span key={i}>{location.city}, {location.country}</span>
+    const renderLocations = locations.map((location, i) => (
+        <span key={i}> {i ? '&' : ''} {location.city}, {location.country}</span>
     ));
 
     return (
         <div>
-            {renderedLocations}
+            {renderLocations}
         </div>
     );
 };

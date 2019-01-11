@@ -1,28 +1,26 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
+
 import "./styles.scss";
 
-import {getSocialMedia} from "../../services/WorkExperienceService";
+import {useSocialMediaList} from "../../services/ProfileService";
 
 const SocialMedia = () => {
-    const [socialMedia, setSocialMedia] = useState([]);
 
-    useEffect(() => {
-        setSocialMedia(getSocialMedia());
-    });
+    const socialMediaList = useSocialMediaList();
 
-    const renderedSocialMediaItems = socialMedia.map((social) => {
+    const renderSocialMediaItems = socialMediaList.map(({name, link}) => {
         return (
             <li
-                key={social.name}
+                key={name}
                 className="social-media__item"
             >
                 <a
-                    href={social.link}
+                    href={link}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-hidden="true"
-                    title={social.name}
-                    className={`fa fa-${social.name}`}
+                    title={name}
+                    className={`fa fa-${name}`}
                 >&nbsp;</a>
             </li>
         );
@@ -30,7 +28,7 @@ const SocialMedia = () => {
 
     return (
         <ul className="social-media">
-            {renderedSocialMediaItems}
+            {renderSocialMediaItems}
         </ul>
     );
 };

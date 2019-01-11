@@ -1,0 +1,14 @@
+.experience-description {
+  padding: 1rem 2rem;
+  li {
+    margin-bottom: 0.5rem;
+    &::before {
+      content: "\2022";
+      color: #306aac;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}

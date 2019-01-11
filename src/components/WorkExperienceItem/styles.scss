@@ -1,0 +1,26 @@
+.work-experience-item {
+  display: flex;
+  margin-top: 1.5rem;
+
+  &__image {
+    width: 100%;
+    display: block;
+    border-radius: 20%;
+    flex: 0 0 auto;
+  }
+  
+  &__title {
+    cursor: pointer;
+    &:not([href]):not([tabindex]):hover {
+      color: #306aac;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}

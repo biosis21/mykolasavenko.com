@@ -5,6 +5,8 @@ const WORK_EXPERIENCE = [
         id: "6",
         title: "Software Consultant",
         company: "WAES",
+        logo: "waes.png",
+        link: "https://www.wearewaes.com",
         locations: [
             {
                 city: "Eindhoven",
@@ -20,8 +22,10 @@ const WORK_EXPERIENCE = [
     },
     {
         id: "5",
-        title: "Innovation Leader",
+        title: "Innovation Lead",
         company: "Kantar Consulting Virtual Reality",
+        logo: "kantar-consulting.png",
+        link: "https://consulting.kantar.com",
         locations: [
             {
                 city: "Kyiv",
@@ -41,6 +45,8 @@ const WORK_EXPERIENCE = [
         id: "4",
         title: "Tech/Team Lead Front End Engineer",
         company: "Kantar Consulting Virtual Reality",
+        logo: "kantar-consulting.png",
+        link: "https://consulting.kantar.com",
         locations: [
             {
                 city: "Kyiv",
@@ -67,6 +73,8 @@ const WORK_EXPERIENCE = [
         id: "3",
         title: "Senior Front End Engineer",
         company: "Ciklum",
+        logo: "ciklum.png",
+        link: "https://www.ciklum.com",
         locations: [
             {
                 city: "Kyiv",
@@ -88,6 +96,8 @@ const WORK_EXPERIENCE = [
         id: "2",
         title: "Front End Engineer",
         company: "Ciklum",
+        logo: "ciklum.png",
+        link: "https://www.ciklum.com",
         locations: [
             {
                 city: "Kyiv",
@@ -105,7 +115,9 @@ const WORK_EXPERIENCE = [
     {
         id: "1",
         title: "Web Developer",
-        company: "Lestro Studio",
+        company: "Lestro",
+        logo: "lestro.png",
+        link: "https://lestro.com",
         locations: [
             {
                 city: "Kyiv",
@@ -124,6 +136,8 @@ const WORK_EXPERIENCE = [
         id: "0",
         title: "Trainee Web Developer",
         company: "Information Computer Center, Taras Shevchenko National University of Kiev",
+        logo: "knu.png",
+        link: "http://univ.kiev.ua",
         locations: [
             {
                 city: "Kyiv",
@@ -146,6 +160,8 @@ const EDUCATION = [
         name: "Taras Shevchenko National University of Kyiv",
         degree: "Master's degree",
         fieldOfStudy: "Applied Physics",
+        logo: "knu.png",
+        link: "http://univ.kiev.ua",
         from: "01/09/2012",
         to: "01/08/2014",
         locations: [
@@ -160,6 +176,8 @@ const EDUCATION = [
         name: "Taras Shevchenko National University of Kyiv",
         degree: "Bachelor’s Degree",
         fieldOfStudy: "Applied Physics",
+        logo: "knu.png",
+        link: "http://univ.kiev.ua",
         from: "01/09/2008",
         to: "01/08/2012",
         locations: [
@@ -173,12 +191,14 @@ const EDUCATION = [
         id: "0",
         name: "Zamhlai School",
         degree: "High School",
-        fieldOfStudy: "Teaching English or French as a Second or Foreign Language",
+        fieldOfStudy: "Teaching English as a Second or Foreign Language",
+        logo: "zamhlai.png",
+        link: "http://univ.kiev.ua",
         from: "01/09/1997",
         to: "01/08/2008",
         locations: [
             {
-                city: "Zamhlai",
+                city: "Zamhlai village",
                 country: "Ukraine"
             }
         ],
@@ -234,10 +254,22 @@ export const useEducationList = () => {
     return education;
 };
 
-export const getSocialMedia = () => {
-    return SOCIAL_MEDIA;
+export const useSocialMediaList = () => {
+    const [socialMediaList, setSocialMediaList] = useState([]);
+
+    useEffect(() => {
+        setSocialMediaList(SOCIAL_MEDIA);
+    });
+
+    return socialMediaList;
 };
 
-export const getContacts = () => {
-    return CONTACTS;
+export const useContacts = () => {
+    const [contacts, setJobs] = useState([]);
+
+    useEffect(() => {
+        setJobs(CONTACTS);
+    });
+
+    return contacts;
 };
