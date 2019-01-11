@@ -8,10 +8,10 @@ const SocialMedia = () => {
 
     const socialMediaList = useSocialMediaList();
 
-    const renderSocialMediaItems = socialMediaList.map(({name, link}) => {
+    const renderSocialMediaItems = socialMediaList.map(({title, icon, link}) => {
         return (
             <li
-                key={name}
+                key={title}
                 className="social-media__item"
             >
                 <a
@@ -19,8 +19,8 @@ const SocialMedia = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-hidden="true"
-                    title={name}
-                    className={`fa fa-${name}`}
+                    title={title}
+                    className={`fa fa-${icon}`}
                 >&nbsp;</a>
             </li>
         );

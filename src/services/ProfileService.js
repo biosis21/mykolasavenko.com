@@ -207,29 +207,38 @@ const EDUCATION = [
 
 const SOCIAL_MEDIA = [
     {
-        name: "facebook",
+        title: "Facebook",
+        icon: "facebook",
         link: "https://www.facebook.com/mykolasavenko"
     },
     {
-        name: "linkedin",
+        title: "LinkedIn",
+        icon: "linkedin",
         link: "https://www.linkedin.com/in/mykola-savenko"
     },
     {
-        name: "instagram",
+        title: "Instagram",
+        icon: "instagram",
         link: "https://www.instagram.com/mykola.savenko/"
     },
     {
-        name: "twitter",
+        title: "Twitter",
+        icon: "twitter",
         link: "https://twitter.com/biosis21"
     },
     {
-        name: "github",
+        title: "GitHub",
+        icon: "github",
         link: "https://github.com/biosis21"
+    },
+    {
+        title: "Resume",
+        icon: "file",
+        link: "https://docs.google.com/document/d/18Dypy6l1Fd-1mhGr7xs5U1v_fRvmJsdWlfEm51EFWow/edit?usp=sharing"
     }
 ];
 
 const CONTACTS = {
-    address: "7B Bohdanivska Street, Kyiv, Ukraine",
     phoneNumber: "+380969538589",
     email: "mykola.savenko21@gmail.com"
 };
