@@ -1,0 +1,41 @@
+.certifications {
+  display: flex;
+  margin-top: 1.5rem;
+
+  &__item {
+    position: relative;
+    display: block;
+    border-radius: 10%;
+    overflow: hidden;
+    &:hover {
+      .certifications__overlay {
+        opacity: 1;
+        transition: opacity ease-in .25s;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+    flex: 0 0 auto;
+  }
+
+  &__overlay {
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #306aac99;
+    color: #fff;
+    font-size: 12px;
+    padding: 5%;
+    align-items: center;
+    transition: opacity ease-in .25s;
+  }
+
+}

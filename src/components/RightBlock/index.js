@@ -5,6 +5,7 @@ import AboutMe from "../AboutMe";
 import Contacts from "../Contacts";
 import Education from "../Education";
 import WorkExperience from "../WorkExperience";
+import Certifications from "../Certifications";
 
 const RightBlock = () => {
 
@@ -13,6 +14,7 @@ const RightBlock = () => {
             <AboutMe />
             <WorkExperience />
             <Education />
+            <Certifications />
             <Contacts />
         </div>
     );

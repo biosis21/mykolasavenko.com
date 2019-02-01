@@ -1,5 +1,56 @@
 import {useEffect, useState} from "react";
 
+const CERTIFICATIONS = [
+    {
+        id: "8",
+        title: "Modern React with Redux [2019 Update]",
+        link: "https://www.udemy.com/certificate/UC-9KFWN0GP/",
+        image: "/images/certifications/UC-9KFWN0GP.jpg",
+    },
+    {
+        id: "7",
+        title: "Angular RxJs Reactive Programming & FREE Ebook",
+        link: "https://www.udemy.com/certificate/UC-4J807GCX/",
+        image: "/images/certifications/UC-4J807GCX.jpg",
+    },
+    {
+        id: "6",
+        title: "The Coding Interview Bootcamp: Algorithms + Data Structures",
+        link: "https://www.udemy.com/certificate/UC-B3SGWLVO/",
+        image: "/images/certifications/UC-B3SGWLVO.jpg",
+    },
+    {
+        id: "5",
+        title: "Scaled Agile Framework Agilist (SA) Certification Program",
+        link: "https://www.slideshare.net/NikolaySavenko1/safecertificate-61925175?ref=https://www.linkedin.com/in/mykola-savenko/detail/treasury/position:793748061/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAAuERisBq6NR8ZPJiCtBixmF39hC6sw5-i8%2C51158890)&section=position%3A793748061&treasuryCount=5",
+        image: "/images/certifications/safe.jpg",
+    },
+    {
+        id: "4",
+        title: "M201: MongoDB Performance",
+        link: "http://university.mongodb.com/course_completion/8d370546-fce1-4e0c-9b9d-7ac79995",
+        image: "/images/certifications/M201.jpg",
+    },
+    {
+        id: "3",
+        title: "M312: Diagnostics and Debugging",
+        link: "http://university.mongodb.com/course_completion/6ae2a5a0-a868-49d7-90cf-3d2d0508",
+        image: "/images/certifications/M312.jpg",
+    },
+    {
+        id: "2",
+        title: "M102: MongoDB for DBAs",
+        link: "http://university.mongodb.com/course_completion/15b93146c6e947c5983edbed03384b1e",
+        image: "/images/certifications/M102.jpg",
+    },
+    {
+        id: "1",
+        title: "M101JS: MongoDB for Node.js Developers",
+        link: "http://university.mongodb.com/course_completion/c25600fbac87459e85f7155cb52375e7",
+        image: "/images/certifications/M101JS.jpg",
+    }
+];
+
 const WORK_EXPERIENCE = [
     {
         id: "6",
@@ -43,7 +94,7 @@ const WORK_EXPERIENCE = [
     },
     {
         id: "4",
-        title: "Tech/Team Lead Front End Engineer",
+        title: "Lead Front End Engineer",
         company: "Kantar Consulting Virtual Reality",
         logo: "kantar-consulting.png",
         link: "https://consulting.kantar.com",
@@ -239,8 +290,17 @@ const SOCIAL_MEDIA = [
 ];
 
 const CONTACTS = {
-    phoneNumber: "+380969538589",
     email: "mykola.savenko21@gmail.com"
+};
+
+export const useCertifications = () => {
+    const [certifications, setCertifications] = useState([]);
+
+    useEffect(() => {
+        setCertifications(CERTIFICATIONS);
+    }, []);
+
+    return certifications;
 };
 
 export const useJobs = () => {

@@ -1,6 +1,13 @@
 .section {
-  padding: 8%;
+  padding: 6% 6% 6% 0;
+
   &:nth-child(2n) {
     background-color: #f5fafe;
+  }
+
+  &__col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

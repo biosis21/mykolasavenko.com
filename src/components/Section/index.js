@@ -9,10 +9,10 @@ const Section = ({title, children}) => {
     return (
         <section className="section">
             <Row>
-                <Col xs="12">
+                <Col xs="2" className="section__col">
                     <SectionHeader title={title} />
                 </Col>
-                <Col xs="12">
+                <Col xs="10">
                     {children}
                 </Col>
             </Row>
