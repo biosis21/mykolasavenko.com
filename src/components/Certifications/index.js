@@ -11,7 +11,10 @@ const Certifications = () => {
     const certifications = useCertifications();
 
     const renderedList = certifications.map((certificate) => (
-        <Col xs="3">
+        <Col
+            key={certificate.id}
+            xs="3"
+        >
             <a
                 className="certifications__item"
                 href={certificate.link}
