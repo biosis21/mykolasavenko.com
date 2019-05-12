@@ -53,6 +53,22 @@ const CERTIFICATIONS = [
 
 const WORK_EXPERIENCE = [
     {
+        id: "7",
+        title: "Fullstack Developer",
+        company: "Greenhouse",
+        logo: "greenhouse.png",
+        link: "https://www.greenhousegroup.com/",
+        locations: [
+            {
+                city: "Eindhoven",
+                country: "Netherlands"
+            }
+        ],
+        from: "01/05/2018",
+        to: null,
+        descriptions: []
+    },
+    {
         id: "6",
         title: "Software Consultant",
         company: "WAES",
@@ -65,7 +81,7 @@ const WORK_EXPERIENCE = [
             }
         ],
         from: "30/10/2018",
-        to: null,
+        to: "31/03/2019",
         descriptions: [
             "Design scalable, maintainable and readable Front End architecture of the Recruitment Dashboard",
             "Took part in the interviewing process of new candidates",
