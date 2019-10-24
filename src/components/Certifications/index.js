@@ -1,10 +1,10 @@
 import React from "react";
+import {Col, Row} from "reactstrap";
 
 import "./styles.scss";
 
 import Section from "../Section";
 import {useCertifications} from "../../services/ProfileService";
-import {Col, Row} from "reactstrap";
 
 const Certifications = () => {
 

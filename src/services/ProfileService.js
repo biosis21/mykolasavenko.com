@@ -1,5 +1,28 @@
 import {useEffect, useState} from "react";
 
+const AWARDS = [
+    {
+        id: "3",
+        title: "1st place at Web Challenge competition in Front End JavaScript Pro category (2018)",
+        image: "/images/awards/ua-web-challenge-2018.jpeg",
+    },
+    {
+        id: "2",
+        title: "Nominated to be an employee of the quarter in Kantar Consulting Virtual Reality",
+        image: "/images/awards/award-icon.jpg",
+    },
+    {
+        id: "1",
+        title: "3rd place at UA Web Challenge competition in Front End JavaScript Pro category (2015)",
+        image: "/images/awards/ua-web-challenge-2015.jpeg",
+    },
+    {
+        id: "0",
+        title: "Nominated to be an employee of the month in Ciklum Interactive Solutions",
+        image: "/images/awards/award-icon.jpg",
+    }
+];
+
 const CERTIFICATIONS = [
     {
         id: "8",
@@ -340,7 +363,7 @@ export const useSocialMediaList = () => {
 
     useEffect(() => {
         setSocialMediaList(SOCIAL_MEDIA);
-    });
+    }, []);
 
     return socialMediaList;
 };
@@ -350,7 +373,17 @@ export const useContacts = () => {
 
     useEffect(() => {
         setJobs(CONTACTS);
-    });
+    }, []);
 
     return contacts;
+};
+
+export const useAwards = () => {
+    const [awards, setAwards] = useState([]);
+
+    useEffect(() => {
+        setAwards(AWARDS);
+    }, []);
+
+    return awards;
 };

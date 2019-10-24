@@ -1,13 +1,17 @@
-.certifications {
+.awards {
   display: flex;
   margin-top: 1.5rem;
+
+  &__row {
+    align-items: center;
+  }
 
   &__item {
     position: relative;
     display: block;
     border-radius: 10%;
     overflow: hidden;
-    &:hover .certifications__overlay {
+    &:hover .awards__overlay {
       opacity: 1;
       transition: opacity ease-in .25s;
     }

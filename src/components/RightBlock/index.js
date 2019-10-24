@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.scss";
 
+import Awards from "../Awards";
 import AboutMe from "../AboutMe";
 import Contacts from "../Contacts";
 import Education from "../Education";
@@ -14,6 +15,7 @@ const RightBlock = () => {
             <AboutMe />
             <WorkExperience />
             <Education />
+            <Awards />
             <Certifications />
             <Contacts />
         </div>
