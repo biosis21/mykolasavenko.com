@@ -83,8 +83,8 @@ const WORK_EXPERIENCE = [
         from: "30/10/2018",
         to: "31/03/2019",
         descriptions: [
-            "Design scalable, maintainable and readable Front End architecture of the Recruitment Dashboard",
-            "Took part in the interviewing process of new candidates",
+            "Increased recruitment team daily productivity by designing and implementing Recruitment Dashboard web application based on React.js ecosystem",
+            "Explored and elaborated a new tool for managing personal development goals for the back-office staff",
         ]
     },
     {
@@ -127,13 +127,11 @@ const WORK_EXPERIENCE = [
         from: "01/12/2015",
         to: "01/07/2018",
         descriptions: [
-            "Developed motivated, self-organized and client-oriented team; optimized team velocity and increased business delivery per program increment by 30%",
-            "Improved application scalability and maintainability by increasing the number of test coverage from 0 to 86 %",
+            "Improved application reliability and maintainability by increasing the number of tests coverage from 0 to 86 %",
             "Reduced the amount of technical debt and bugs by establishing a new approach - SPP (Seek out – Prioritize - Plan)",
-            "Provided migration plan and successfully upgraded the entire project from Angular 1.4 to 5.0 version in less than 4 months",
-            "Created a new project architecture based on AngularJS ecosystem and SOLID principles",
-            "Provided mentorship and created a guideline to newcomers to decrease onboarding time",
-            "Improved project code quality by creating code style guide and added it to CI process"
+            "Provided migration plan and successfully upgraded the entire project from Angular 1.4 to 5.0 version in 6 months",
+            "Developed a motivated, self-organized and client-oriented team; optimized team velocity per program increment by 30%",
+            "Decreased onboarding time from 3 to 1 month by providing mentorship and creating guidelines to newcomers"
         ]
     },
     {
@@ -151,12 +149,11 @@ const WORK_EXPERIENCE = [
         from: "01/07/2015",
         to: "01/11/2015",
         descriptions: [
-            "Developed, searched and optimized technical solutions to increase the effectiveness of the team and reduce product cost expenses",
+            "Increased the effectiveness of the team and reduced product cost expenses by developing and optimizing technical solutions",
             "Created and maintained development guidelines",
             "Improved code quality by applying Test Driven Development process",
             "Organized JavaScript Hackathons based on ReactJS and AngularJS frameworks",
-            "Organized and led JavaScript meetups in Ciklum Interactive Solutions; conducted two presentations about JS world and Angular ecosystem",
-            "Took part in the interviewing process of new candidates"
+            "Organized and led JavaScript meetups in Ciklum Interactive Solutions"
         ]
     },
     {
@@ -174,9 +171,8 @@ const WORK_EXPERIENCE = [
         from: "08/04/2014",
         to: "01/07/2015",
         descriptions: [
-            "Created a new project architecture based on AngularJS ecosystem",
-            "Integrated unit test tools to increase code quality and maintainability",
-            "Interviewed candidates and mentored new engineers"
+            "Designed and implemented a new project architecture based on AngularJS ecosystem",
+            "Increased code quality and maintainability by integrating unit test tools"
         ]
     },
     {
