@@ -7,7 +7,7 @@ import CollapseContext from "../../contexts/CollapseContext";
 
 const ExperienceDescription = ({descriptions}) => {
 
-    const renderDescriptions = descriptions.map((desc, i) => (<li key={i}>{desc}</li>));
+    const renderDescriptions = descriptions.map((desc, i) => (<li key={i} dangerouslySetInnerHTML={{__html: desc}}></li>));
 
     return (
         <CollapseContext.Consumer>

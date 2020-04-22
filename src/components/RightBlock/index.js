@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.scss";
 
+import Skills from "../Skills";
 import Awards from "../Awards";
 import AboutMe from "../AboutMe";
 import Contacts from "../Contacts";
@@ -13,6 +14,7 @@ const RightBlock = () => {
     return (
         <div className="right-block">
             <AboutMe />
+            <Skills />
             <WorkExperience />
             <Education />
             <Awards />

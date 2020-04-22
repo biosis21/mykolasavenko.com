@@ -1,5 +1,36 @@
 import { useEffect, useState } from "react";
 
+const SKILLS = [
+  {
+    name: "JavaScript",
+    from: 2011
+  },
+  {
+    name: "TypeScript",
+    from: 2016
+  },
+  {
+    name: "React.js",
+    from: 2016
+  },
+  {
+    name: "Angular",
+    from: 2014
+  },
+  {
+    name: "Node.js",
+    from: 2016
+  },
+  {
+    name: "HTML",
+    from: 2011
+  },
+  {
+    name: "CSS",
+    from: 2011
+  },
+];
+
 const AWARDS = [
   {
     id: "3",
@@ -77,7 +108,7 @@ const CERTIFICATIONS = [
 const WORK_EXPERIENCE = [
   {
     id: "7",
-    title: "Senior Fullstack Developer",
+    title: "Senior Full Stack Engineer",
     company: "Greenhouse",
     logo: "greenhouse.png",
     link: "https://www.greenhousegroup.com/",
@@ -87,13 +118,17 @@ const WORK_EXPERIENCE = [
         country: "Netherlands"
       }
     ],
-    from: "01/05/2018",
-    to: null,
-    descriptions: []
+    from: "01/05/2019",
+    to: "01/05/2020",
+    descriptions: [
+      "Created from scratch and led the development of the <a target='_blank' href='https://www.npmjs.com/package/@greenhousegroup/shared-ui'>JARVIS UI</a> shared components library based on React.js, Storybook, TypeScript",
+      "Improved reliability and reduced number of incoming bugs by 15% by implementing TypeScript into existed React.js application on BaaS project",
+      "Improved scalability by redesigning existed approach of handling the business logic by introducing the single responsibility principle and composable component approach on BaaS and Optiwiser AI projects"
+    ]
   },
   {
     id: "6",
-    title: "Senior Software Consultant",
+    title: "Senior Software Engineer",
     company: "WAES",
     logo: "waes.png",
     link: "https://www.wearewaes.com",
@@ -106,13 +141,13 @@ const WORK_EXPERIENCE = [
     from: "30/10/2018",
     to: "31/03/2019",
     descriptions: [
-      "Increased recruitment team daily productivity by designing and implementing Recruitment Dashboard web application based on React.js ecosystem",
+      "Increased recruitment team daily productivity by implementing Recruitment Dashboard web application based on React.js ecosystem",
       "Explored and elaborated a new tool for managing personal development goals for the back-office staff",
     ]
   },
   {
     id: "5",
-    title: "Lead Front End Engineer",
+    title: "Lead Front End Engineer, Scrum Master",
     company: "Kantar Consulting Virtual Reality",
     logo: "kantar-consulting.png",
     link: "https://consulting.kantar.com",
@@ -129,8 +164,8 @@ const WORK_EXPERIENCE = [
     from: "01/12/2015",
     to: "01/07/2018",
     descriptions: [
-      "Improved application reliability and maintainability by increasing the number of tests coverage from 0 to 86 %",
-      "Reduced the amount of technical debt and bugs by establishing a new approach - SPP (Seek out – Prioritize - Plan)",
+      "Improved VRCloud application quality by increasing the number of unit tests coverage from 0 to 86 %",
+      "Reduced the amount of technical debt from 109 story points to 8 in 1.5 year and bugs by establishing a new approach - SPP (Seek out – Prioritize - Plan)",
       "Provided migration plan and successfully upgraded the entire project from Angular 1.4 to 5.0 version in 6 months",
       "Developed a motivated, self-organized and client-oriented team; optimized team velocity per program increment by 30%",
       "Decreased onboarding time from 3 to 1 month by providing mentorship and creating guidelines to newcomers"
@@ -172,9 +207,8 @@ const WORK_EXPERIENCE = [
     from: "01/07/2015",
     to: "01/11/2015",
     descriptions: [
-      "Increased the effectiveness of the team and reduced product cost expenses by developing and optimizing technical solutions",
-      "Created and maintained development guidelines",
-      "Improved code quality by applying Test Driven Development process",
+      "Created and maintained Front End development guidelines for AngularJS ecosystem",
+      "Improved code quality by implemented Test Driven Development process",
       "Organized JavaScript Hackathons based on ReactJS and AngularJS frameworks",
       "Organized and led JavaScript meetups in Ciklum Interactive Solutions"
     ]
@@ -232,11 +266,7 @@ const WORK_EXPERIENCE = [
     ],
     from: "01/10/2010",
     to: "01/04/2011",
-    descriptions: [
-      "Wrote a cross-browser compatible code down to IE7",
-      "Developed web applications using CodeIgniter, PHP, MySQL, JavaScript, HTML, CSS",
-      "Provided high-level project estimation for pre-sale activity"
-    ]
+    descriptions: []
   }
 ];
 
@@ -245,7 +275,7 @@ const EDUCATION = [
     id: "2",
     name: "Taras Shevchenko National University of Kyiv",
     degree: "Master's degree",
-    fieldOfStudy: "Applied Physics",
+    fieldOfStudy: "RadioPhysics and Electronics",
     logo: "knu.png",
     link: "http://univ.kiev.ua",
     from: "01/09/2012",
@@ -261,7 +291,7 @@ const EDUCATION = [
     id: "1",
     name: "Taras Shevchenko National University of Kyiv",
     degree: "Bachelor’s Degree",
-    fieldOfStudy: "Applied Physics",
+    fieldOfStudy: "RadioPhysics and Electronics",
     logo: "knu.png",
     link: "http://univ.kiev.ua",
     from: "01/09/2008",
@@ -386,4 +416,14 @@ export const useAwards = () => {
   }, []);
 
   return awards;
+};
+
+export const useSkills = () => {
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    setSkills(SKILLS);
+  }, []);
+
+  return skills;
 };
