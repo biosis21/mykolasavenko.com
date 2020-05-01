@@ -351,6 +351,16 @@ const SOCIAL_MEDIA = [
     title: "Resume",
     icon: "file",
     link: "https://docs.google.com/document/d/18Dypy6l1Fd-1mhGr7xs5U1v_fRvmJsdWlfEm51EFWow/edit?usp=sharing"
+  },
+  {
+    title: "LeetCode",
+    icon: "leetcode",
+    link: "https://leetcode.com/mykolasavenko"
+  },
+  {
+    title: "HackerRank",
+    icon: "hackerrank",
+    link: "https://www.hackerrank.com/biosis21"
   }
 ];
 

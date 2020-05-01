@@ -8,16 +8,22 @@
 }
 
 .fa {
-  padding: 20px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   text-decoration: none;
-  text-indent: -25%;
   color: #306aac;
 }
 
 .fa:hover {
   text-decoration: none;
   color: #34495e;
+}
+
+.fa.fa-hackerrank {
+  background: url('/images/icons/hackerrank.svg') no-repeat scroll center center transparent;
+}
+
+.fa.fa-leetcode {
+  background: url('/images/icons/leetcode.svg') no-repeat scroll center center transparent;
 }

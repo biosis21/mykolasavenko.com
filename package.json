@@ -1,14 +1,14 @@
 {
   "name": "mykolasavenko.com",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.2.1",
-    "node-sass": "^4.11.0",
-    "react": "^16.7.0-alpha.2",
-    "react-dom": "^16.7.0-alpha.2",
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.14.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-scripts": "2.1.2",
-    "reactstrap": "^6.5.0"
+    "reactstrap": "^8.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
