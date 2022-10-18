@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-
-const SKILLS = [
+export const skills = [
   {
     name: "JavaScript",
     from: 2011
@@ -14,12 +12,28 @@ const SKILLS = [
     from: 2016
   },
   {
-    name: "Angular",
-    from: 2014
+    name: "RxJS",
+    from: 2020
+  },
+  {
+    name: "Redux",
+    from: 2016
+  },
+  {
+    name: "WebGL",
+    from: 2017
+  },
+  {
+    name: "AWS",
+    from: 2020
   },
   {
     name: "Node.js",
     from: 2016
+  },
+  {
+    name: "Angular",
+    from: 2014
   },
   {
     name: "HTML",
@@ -31,7 +45,7 @@ const SKILLS = [
   },
 ];
 
-const AWARDS = [
+export const awards = [
   {
     id: "3",
     title: "1st place at Web Challenge competition in Front End JavaScript Pro category (2018)",
@@ -54,7 +68,7 @@ const AWARDS = [
   }
 ];
 
-const CERTIFICATIONS = [
+export const certifications = [
   {
     id: "8",
     title: "Modern React with Redux [2019 Update]",
@@ -105,7 +119,45 @@ const CERTIFICATIONS = [
   }
 ];
 
-const WORK_EXPERIENCE = [
+export const workExperience = [
+  {
+    id: "9",
+    title: "Staff Front End Engineer",
+    company: "Docler Holding",
+    logo: "docler-holding.png",
+    link: "https://www.doclerholding.com/",
+    locations: [
+      {
+        city: "Luxembourg",
+        country: "Luxembourg"
+      }
+    ],
+    from: "02/01/2021",
+    to: "",
+    descriptions: [
+      "Investigated and improved the page loading time of <a target='_blank' href='https://oranum.com'>Oranum</a> from 12 to 3 seconds by rewriting core libraries and implementing prioritized order of loading resources",
+      "Collaborated on a team to design and implement new core components, own state management based on RxJS and React, and extensively automatise development process of a new <a target='_blank' href='https://new.modelcenter.livejasmin.com/'>Model Center</a>",
+    ]
+  },
+  {
+    id: "8",
+    title: "Lead Front End Engineer",
+    company: "Damstahl",
+    logo: "damstahl.jpeg",
+    link: "https://damstahl.com/en",
+    locations: [
+      {
+        city: "Kyiv",
+        country: "Ukraine"
+      }
+    ],
+    from: "05/01/2020",
+    to: "02/01/2021",
+    descriptions: [
+      "Unblocked release process of <a target='_blank' href='https://damstahl.com/en/'>Damstahl</a>marketplace by making technical audit, presented execution roadmap, and designed a new architecture based on React ecosystem",
+      "Improved development process and collaboration by integrating the atomic design, by developing a new design system in combination with Storybook",
+    ]
+  },
   {
     id: "7",
     title: "Senior Full Stack Engineer",
@@ -118,8 +170,8 @@ const WORK_EXPERIENCE = [
         country: "Netherlands"
       }
     ],
-    from: "01/05/2019",
-    to: "01/05/2020",
+    from: "05/01/2019",
+    to: "05/01/2020",
     descriptions: [
       "Created from scratch and led the development of the <a target='_blank' href='https://www.npmjs.com/package/@greenhousegroup/shared-ui'>JARVIS UI</a> shared components library based on React.js, Storybook, TypeScript",
       "Improved reliability and reduced number of incoming bugs by 15% by implementing TypeScript into existed React.js application on BaaS project",
@@ -138,8 +190,8 @@ const WORK_EXPERIENCE = [
         country: "Netherlands"
       }
     ],
-    from: "30/10/2018",
-    to: "31/03/2019",
+    from: "10/30/2018",
+    to: "03/31/2019",
     descriptions: [
       "Increased recruitment team daily productivity by implementing Recruitment Dashboard web application based on React.js ecosystem",
       "Explored and elaborated a new tool for managing personal development goals for the back-office staff",
@@ -161,8 +213,8 @@ const WORK_EXPERIENCE = [
         country: "United Kingdom"
       }
     ],
-    from: "01/12/2015",
-    to: "01/07/2018",
+    from: "12/01/2015",
+    to: "07/01/2018",
     descriptions: [
       "Improved VRCloud application quality by increasing the number of unit tests coverage from 0 to 86 %",
       "Reduced the amount of technical debt from 109 story points to 8 in 1.5 year and bugs by establishing a new approach - SPP (Seek out – Prioritize - Plan)",
@@ -183,8 +235,8 @@ const WORK_EXPERIENCE = [
         country: "Ukraine"
       }
     ],
-    from: "01/09/2017",
-    to: "01/07/2018",
+    from: "09/01/2017",
+    to: "07/01/2018",
     descriptions: [
       "Founded Innovation Engineering Group (IEG) to investigate, validate, create a technology roadmap and implement new business ideas",
       "Delivered more than six new PoCs implemented by IEG in the last six months; worked closely with stakeholders and risk management group to make all prototypes consistent with business objectives",
@@ -204,8 +256,8 @@ const WORK_EXPERIENCE = [
         country: "Ukraine"
       }
     ],
-    from: "01/07/2015",
-    to: "01/11/2015",
+    from: "07/01/2015",
+    to: "11/01/2015",
     descriptions: [
       "Created and maintained Front End development guidelines for AngularJS ecosystem",
       "Improved code quality by implemented Test Driven Development process",
@@ -225,8 +277,8 @@ const WORK_EXPERIENCE = [
         country: "Ukraine"
       }
     ],
-    from: "08/04/2014",
-    to: "01/07/2015",
+    from: "04/08/2014",
+    to: "07/01/2015",
     descriptions: [
       "Designed and implemented a new project architecture based on AngularJS ecosystem",
       "Increased code quality and maintainability by integrating unit test tools"
@@ -244,8 +296,8 @@ const WORK_EXPERIENCE = [
         country: "Ukraine"
       }
     ],
-    from: "01/12/2011",
-    to: "08/04/2015",
+    from: "12/01/2011",
+    to: "04/08/2015",
     descriptions: [
       "Wrote a cross-browser compatible code down to IE7",
       "Developed web applications using CodeIgniter, PHP, MySQL, JavaScript, HTML, CSS",
@@ -264,13 +316,13 @@ const WORK_EXPERIENCE = [
         country: "Ukraine"
       }
     ],
-    from: "01/10/2010",
-    to: "01/04/2011",
+    from: "10/01/2010",
+    to: "04/01/2011",
     descriptions: []
   }
 ];
 
-const EDUCATION = [
+export const education = [
   {
     id: "2",
     name: "Taras Shevchenko National University of Kyiv",
@@ -278,8 +330,8 @@ const EDUCATION = [
     fieldOfStudy: "RadioPhysics and Electronics",
     logo: "knu.png",
     link: "http://univ.kiev.ua",
-    from: "01/09/2012",
-    to: "01/08/2014",
+    from: "09/01/2012",
+    to: "08/01/2014",
     locations: [
       {
         city: "Kyiv",
@@ -294,8 +346,8 @@ const EDUCATION = [
     fieldOfStudy: "RadioPhysics and Electronics",
     logo: "knu.png",
     link: "http://univ.kiev.ua",
-    from: "01/09/2008",
-    to: "01/08/2012",
+    from: "09/01/2008",
+    to: "08/01/2012",
     locations: [
       {
         city: "Kyiv",
@@ -310,8 +362,8 @@ const EDUCATION = [
     fieldOfStudy: "Teaching English as a Second or Foreign Language",
     logo: "zamhlai.png",
     link: "http://univ.kiev.ua",
-    from: "01/09/1997",
-    to: "01/08/2008",
+    from: "09/01/1997",
+    to: "08/01/2008",
     locations: [
       {
         city: "Zamhlai village",
@@ -321,7 +373,7 @@ const EDUCATION = [
   }
 ];
 
-const SOCIAL_MEDIA = [
+export const socialMedia = [
   {
     title: "Facebook",
     icon: "facebook",
@@ -364,76 +416,6 @@ const SOCIAL_MEDIA = [
   }
 ];
 
-const CONTACTS = {
+export const contacts = {
   email: "mykola.savenko21@gmail.com"
-};
-
-export const useCertifications = () => {
-  const [certifications, setCertifications] = useState([]);
-
-  useEffect(() => {
-    setCertifications(CERTIFICATIONS);
-  }, []);
-
-  return certifications;
-};
-
-export const useJobs = () => {
-  const [jobs, setJobs] = useState([]);
-
-  useEffect(() => {
-    setJobs(WORK_EXPERIENCE);
-  }, []);
-
-  return jobs;
-};
-
-export const useEducationList = () => {
-  const [education, setEducation] = useState([]);
-
-  useEffect(() => {
-    setEducation(EDUCATION);
-  }, []);
-
-  return education;
-};
-
-export const useSocialMediaList = () => {
-  const [socialMediaList, setSocialMediaList] = useState([]);
-
-  useEffect(() => {
-    setSocialMediaList(SOCIAL_MEDIA);
-  }, []);
-
-  return socialMediaList;
-};
-
-export const useContacts = () => {
-  const [contacts, setJobs] = useState([]);
-
-  useEffect(() => {
-    setJobs(CONTACTS);
-  }, []);
-
-  return contacts;
-};
-
-export const useAwards = () => {
-  const [awards, setAwards] = useState([]);
-
-  useEffect(() => {
-    setAwards(AWARDS);
-  }, []);
-
-  return awards;
-};
-
-export const useSkills = () => {
-  const [skills, setSkills] = useState([]);
-
-  useEffect(() => {
-    setSkills(SKILLS);
-  }, []);
-
-  return skills;
 };

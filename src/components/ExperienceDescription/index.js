@@ -6,15 +6,12 @@ import './styles.scss';
 import CollapseContext from "../../contexts/CollapseContext";
 
 const ExperienceDescription = ({descriptions}) => {
-
-    const renderDescriptions = descriptions.map((desc, i) => (<li key={i} dangerouslySetInnerHTML={{__html: desc}}></li>));
-
     return (
         <CollapseContext.Consumer>
             {(collapse) => (
                 <Collapse isOpen={collapse}>
                     <ul className="experience-description">
-                        {renderDescriptions}
+                        {descriptions.map((desc, i) => (<li key={i} dangerouslySetInnerHTML={{__html: desc}}></li>))}
                     </ul>
                 </Collapse>
             )}

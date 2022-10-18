@@ -7,7 +7,6 @@ import TimeRange from "../TimeRange";
 import {Col, Row} from "reactstrap";
 
 const EducationItem = ({item}) => {
-
     return (
         <Row className="education-item align-items-center">
             <Col xs="2">

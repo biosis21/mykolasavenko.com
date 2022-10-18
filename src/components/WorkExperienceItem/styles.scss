@@ -1,6 +1,6 @@
 .work-experience-item {
   display: flex;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 
   &__image {
     width: 100%;
@@ -9,10 +9,16 @@
     flex: 0 0 auto;
   }
   
-  &__title {
+  &__desc {
     cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
+    transition: background-color ease-in 0.2s;
+    transition: box-shadow ease-in 0.2s;
+
     &:not([href]):not([tabindex]):hover {
-      color: #306aac;
+      background-color: #f5fafe;
+      box-shadow: -1px 0 0 0px #306aac;
     }
   }
 

@@ -5,7 +5,6 @@ import "./styles.scss";
 import SectionHeader from "../SectionHeader";
 
 const Section = ({title, children}) => {
-
     return (
         <section className="section">
             <Row>

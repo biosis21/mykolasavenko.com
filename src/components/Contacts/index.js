@@ -1,21 +1,16 @@
 import React from "react";
 
 import Section from "../Section";
-import {useContacts} from "../../services/ProfileService";
+import { contacts } from "../../services";
 
 const Contacts = () => {
-
-    const {email} = useContacts();
-
     return (
         <Section title="Contacts">
-
             <address>
                 <strong>Email</strong>
                 <br />
-                <a href={`mailto:${email}`}>{email}</a>
+                <a href={`mailto:${contacts.email}`}>{contacts.email}</a>
             </address>
-
         </Section>
     );
 };

@@ -2,24 +2,19 @@ import React from "react";
 
 import Section from "../Section";
 import EducationItem from "../EducationItem";
-import {useEducationList} from "../../services/ProfileService";
+import { education } from "../../services";
 
 const Education = () => {
-
-    const list = useEducationList();
-
-    const renderList = list.map((ed) => {
-        return (
-            <EducationItem
-                key={ed.id}
-                item={ed}
-            />
-        );
-    });
-
     return (
         <Section title="Education">
-            {renderList}
+            {education.map((ed) => {
+                return (
+                    <EducationItem
+                        key={ed.id}
+                        item={ed}
+                    />
+                );
+            })}
         </Section>
     );
 };
