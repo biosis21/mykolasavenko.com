@@ -173,9 +173,8 @@ export const workExperience = [
     from: "05/01/2019",
     to: "05/01/2020",
     descriptions: [
-      "Created from scratch and led the development of the <a target='_blank' href='https://www.npmjs.com/package/@greenhousegroup/shared-ui'>JARVIS UI</a> shared components library based on React.js, Storybook, TypeScript",
-      "Improved reliability and reduced number of incoming bugs by 15% by implementing TypeScript into existed React.js application on BaaS project",
-      "Improved scalability by redesigning existed approach of handling the business logic by introducing the single responsibility principle and composable component approach on BaaS and Optiwiser AI projects"
+      "Designed from scratch and led the development of the <a target='_blank' href='https://www.npmjs.com/package/@greenhousegroup/shared-ui'>JARVIS UI</a> shared components library based on React.js, Storybook, TypeScript, monorepo",
+      "Reduced the number of incoming sprint bugs by 15% by integrating TypeScript into existing React.js application on the BaaS project",
     ]
   },
   {
@@ -193,8 +192,8 @@ export const workExperience = [
     from: "10/30/2018",
     to: "03/31/2019",
     descriptions: [
-      "Increased recruitment team daily productivity by implementing Recruitment Dashboard web application based on React.js ecosystem",
-      "Explored and elaborated a new tool for managing personal development goals for the back-office staff",
+      "Increased recruitment team productivity by implementing a dashboard web application based on the React.js",
+      "Improved onboarding process for newcomers by exploring and elaborating a new application for managing personal development goals",
     ]
   },
   {
@@ -216,11 +215,10 @@ export const workExperience = [
     from: "12/01/2015",
     to: "07/01/2018",
     descriptions: [
-      "Improved VRCloud application quality by increasing the number of unit tests coverage from 0 to 86 %",
-      "Reduced the amount of technical debt from 109 story points to 8 in 1.5 year and bugs by establishing a new approach - SPP (Seek out – Prioritize - Plan)",
-      "Provided migration plan and successfully upgraded the entire project from Angular 1.4 to 5.0 version in 6 months",
-      "Developed a motivated, self-organized and client-oriented team; optimized team velocity per program increment by 30%",
-      "Decreased onboarding time from 3 to 1 month by providing mentorship and creating guidelines to newcomers"
+      "Increased the number of unit tests coverage from 0 to 86 % for VRCloud web application",
+      "Reduced the amount of technical debt from 109 story points to 8 in 1.5 years by establishing a new approach - SPP (Seek out – Prioritize - Plan)",
+      "Upgraded the entire project from Angular 1.4 to 5.0 version in 6 months by developing a technical roadmap to support versions in parallel and actively collaborating with the product owners",
+      "Decreased onboarding time from 3 to 1 month by providing mentorship, creating guidelines and learning sessions for newcomers",
     ]
   },
   {
@@ -238,10 +236,9 @@ export const workExperience = [
     from: "09/01/2017",
     to: "07/01/2018",
     descriptions: [
-      "Founded Innovation Engineering Group (IEG) to investigate, validate, create a technology roadmap and implement new business ideas",
-      "Delivered more than six new PoCs implemented by IEG in the last six months; worked closely with stakeholders and risk management group to make all prototypes consistent with business objectives",
-      "Designed and led cross-functional brainstorm sessions to solve technical critical problems during the delivery process",
-      "Analyzed business strategy and identified new opportunities; aligned business direction with the team members’ personal goals to increase team motivation"
+      "Founded Innovation Engineering Group (IEG) for investigating, validating, and implementing new business ideas",
+      "Delivered more than 6 new PoCs implemented by IEG during months by working closely with stakeholders and risk management group to make all prototypes consistent with business objectives",
+      "Aligned company strategy direction with the team members’ personal goals to increase team motivation and product delivery",
     ]
   },
   {
