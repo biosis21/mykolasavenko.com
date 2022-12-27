@@ -122,8 +122,8 @@ export const certifications = [
 export const workExperience = [
   {
     id: "9",
-    title: "Staff Front End Engineer",
-    company: "Docler Holding",
+    title: "Staff Frontend Software Engineer",
+    company: "Docler Holding Luxembourg",
     logo: "docler-holding.png",
     link: "https://www.doclerholding.com/",
     locations: [
@@ -135,16 +135,17 @@ export const workExperience = [
     from: "02/01/2021",
     to: "",
     descriptions: [
-      "Investigated and improved the page loading time of <a target='_blank' href='https://oranum.com'>Oranum</a> from 12 to 3 seconds by rewriting core libraries and implementing prioritized order of loading resources",
-      "Collaborated on a team to design and implement new core components, own state management based on RxJS and React, and extensively automatise development process of a new <a target='_blank' href='https://new.modelcenter.livejasmin.com/'>Model Center</a>",
+      "Investigated and improved the page loading time of video live-streaming chat from 12 to 3 seconds in two months by rewriting core libraries and managing the order of loading resources",
+      "Designed and implemented new core components, state management based on RxJS and ReactJS, and extensively automatized the development process of the new back office site",
+      "Led the development of critical features as a feature-responsible person by mitigating risks, designing functionality, and collaborating with the design, translation, and stakeholders teams",
     ]
   },
   {
     id: "8",
-    title: "Lead Front End Engineer",
-    company: "Damstahl",
-    logo: "damstahl.jpeg",
-    link: "https://damstahl.com/en",
+    title: "Lead Frontend Software Engineer",
+    company: "Slize Digital",
+    logo: "slizedigital.jpeg",
+    link: "https://slize.io/",
     locations: [
       {
         city: "Kyiv",
@@ -154,13 +155,12 @@ export const workExperience = [
     from: "05/01/2020",
     to: "02/01/2021",
     descriptions: [
-      "Unblocked release process of <a target='_blank' href='https://damstahl.com/en/'>Damstahl</a>marketplace by making technical audit, presented execution roadmap, and designed a new architecture based on React ecosystem",
-      "Improved development process and collaboration by integrating the atomic design, by developing a new design system in combination with Storybook",
+      "Increased scalability and unblocked production release by redesigning the existing marketplace application to a new front-end architecture based on ReactJS, atomic design, and storybook",
     ]
   },
   {
     id: "7",
-    title: "Senior Full Stack Engineer",
+    title: "Senior Full Stack Software Engineer",
     company: "Greenhouse",
     logo: "greenhouse.png",
     link: "https://www.greenhousegroup.com/",
@@ -173,8 +173,8 @@ export const workExperience = [
     from: "05/01/2019",
     to: "05/01/2020",
     descriptions: [
-      "Designed from scratch and led the development of the <a target='_blank' href='https://www.npmjs.com/package/@greenhousegroup/shared-ui'>JARVIS UI</a> shared components library based on React.js, Storybook, TypeScript, monorepo",
-      "Reduced the number of incoming sprint bugs by 15% by integrating TypeScript into existing React.js application on the BaaS project",
+      "Unified the code base of multiple company products by redesigning and leading the development of the shared components library based on ReactJS, Storybook, TypeScript, monorepo",
+      "Reduced the number of incoming sprint bugs by 15% by integrating TypeScript into existing ReactJS application on the BaaS project",
     ]
   },
   {
@@ -192,13 +192,13 @@ export const workExperience = [
     from: "10/30/2018",
     to: "03/31/2019",
     descriptions: [
-      "Increased recruitment team productivity by implementing a dashboard web application based on the React.js",
-      "Improved onboarding process for newcomers by exploring and elaborating a new application for managing personal development goals",
+      "Increased recruitment team productivity by implementing a dashboard web application based on the ReactJS",
+      "Made the onboarding process more effective for newcomers by exploring and designing a new gaming mobile application for managing personal development goals",
     ]
   },
   {
     id: "5",
-    title: "Lead Front End Engineer, Scrum Master",
+    title: "Lead Frontend Software Engineer",
     company: "Kantar Consulting Virtual Reality",
     logo: "kantar-consulting.png",
     link: "https://consulting.kantar.com",
@@ -215,15 +215,14 @@ export const workExperience = [
     from: "12/01/2015",
     to: "07/01/2018",
     descriptions: [
-      "Increased the number of unit tests coverage from 0 to 86 % for VRCloud web application",
-      "Reduced the amount of technical debt from 109 story points to 8 in 1.5 years by establishing a new approach - SPP (Seek out – Prioritize - Plan)",
-      "Upgraded the entire project from Angular 1.4 to 5.0 version in 6 months by developing a technical roadmap to support versions in parallel and actively collaborating with the product owners",
-      "Decreased onboarding time from 3 to 1 month by providing mentorship, creating guidelines and learning sessions for newcomers",
+      "Reduced the number of production bugs by increasing the number of unit tests coverage from 0 to 86 % for the VRCloud web application",
+      "Reduced the amount of technical debt from 109 story points to 8 in a development cycle by establishing a new approach - SPP (Seek out – Prioritize - Plan)",
+      "Upgraded the entire project from Angular 1.4 to 5.0 version in 6 months by developing a technology roadmap to support multiple versions in parallel",
     ]
   },
   {
     id: "4",
-    title: "Innovation Lead",
+    title: "Innovation Engineering Lead",
     company: "Kantar Consulting Virtual Reality",
     logo: "kantar-consulting.png",
     link: "https://consulting.kantar.com",
@@ -236,14 +235,15 @@ export const workExperience = [
     from: "09/01/2017",
     to: "07/01/2018",
     descriptions: [
-      "Founded Innovation Engineering Group (IEG) for investigating, validating, and implementing new business ideas",
-      "Delivered more than 6 new PoCs implemented by IEG during months by working closely with stakeholders and risk management group to make all prototypes consistent with business objectives",
+      "Organized process of working with business ideas by founding and leading the Innovation Engineering Group to investigate, validate, and implement MVP solutions",
+      "Led the development of six new prof-of-concepts by working closely with stakeholders and the risk management group to make all prototypes consistent with business objectives",
       "Aligned company strategy direction with the team members’ personal goals to increase team motivation and product delivery",
+      "Decreased onboarding time from 3 to 1 month by providing mentorship, creating guidelines and learning sessions for newcomers",
     ]
   },
   {
     id: "3",
-    title: "Senior Front End Engineer",
+    title: "Senior Frontend Software Engineer",
     company: "Ciklum",
     logo: "ciklum.png",
     link: "https://www.ciklum.com",
@@ -256,15 +256,14 @@ export const workExperience = [
     from: "07/01/2015",
     to: "11/01/2015",
     descriptions: [
-      "Created and maintained Front End development guidelines for AngularJS ecosystem",
-      "Improved code quality by implemented Test Driven Development process",
+      "Created and maintained front-end development guidelines for the company projects",
       "Organized JavaScript Hackathons based on ReactJS and AngularJS frameworks",
-      "Organized and led JavaScript meetups in Ciklum Interactive Solutions"
+      "Organized and led JavaScript biweekly meetups in Ciklum Interactive Solutions",
     ]
   },
   {
     id: "2",
-    title: "Front End Engineer",
+    title: "Frontend Software Engineer",
     company: "Ciklum",
     logo: "ciklum.png",
     link: "https://www.ciklum.com",
@@ -277,7 +276,7 @@ export const workExperience = [
     from: "04/08/2014",
     to: "07/01/2015",
     descriptions: [
-      "Designed and implemented a new project architecture based on AngularJS ecosystem",
+      "Designed and implemented a new project architecture based on AngularJS, D3.js, jQuery",
       "Increased code quality and maintainability by integrating unit test tools"
     ]
   },
@@ -296,9 +295,7 @@ export const workExperience = [
     from: "12/01/2011",
     to: "04/08/2015",
     descriptions: [
-      "Wrote a cross-browser compatible code down to IE7",
       "Developed web applications using CodeIgniter, PHP, MySQL, JavaScript, HTML, CSS",
-      "Provided high-level project estimation for pre-sale activity"
     ]
   },
   {
@@ -315,7 +312,9 @@ export const workExperience = [
     ],
     from: "10/01/2010",
     to: "04/01/2011",
-    descriptions: []
+    descriptions: [
+      "Maintained and developed existing projects written with PHP, JavaScript, CSS, and HTML",
+    ]
   }
 ];
 
@@ -324,7 +323,7 @@ export const education = [
     id: "2",
     name: "Taras Shevchenko National University of Kyiv",
     degree: "Master's degree",
-    fieldOfStudy: "RadioPhysics and Electronics",
+    fieldOfStudy: "Radiophysics and Electronics",
     logo: "knu.png",
     link: "http://univ.kiev.ua",
     from: "09/01/2012",
@@ -340,7 +339,7 @@ export const education = [
     id: "1",
     name: "Taras Shevchenko National University of Kyiv",
     degree: "Bachelor’s Degree",
-    fieldOfStudy: "RadioPhysics and Electronics",
+    fieldOfStudy: "Radiophysics and Electronics",
     logo: "knu.png",
     link: "http://univ.kiev.ua",
     from: "09/01/2008",
