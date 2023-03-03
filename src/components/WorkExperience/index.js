@@ -2,12 +2,12 @@ import React from "react";
 
 import Section from "../Section";
 import WorkExperienceItem from "../WorkExperienceItem";
-import {workExperience} from "../../services";
+import {professionalExperience} from "../../services";
 
 const WorkExperience = () => {
     return (
-        <Section title="Work Experience">
-            {workExperience.map((job) => {
+        <Section title="Professional Experience">
+            {professionalExperience.map((job) => {
                 return (
                     <WorkExperienceItem
                         key={job.id}

@@ -119,10 +119,10 @@ export const certifications = [
   }
 ];
 
-export const workExperience = [
+export const professionalExperience = [
   {
     id: "9",
-    title: "Staff Frontend Software Engineer",
+    title: "Staff Front End Software Engineer",
     company: "Docler Holding Luxembourg",
     logo: "docler-holding.png",
     link: "https://www.doclerholding.com/",
@@ -142,7 +142,7 @@ export const workExperience = [
   },
   {
     id: "8",
-    title: "Lead Frontend Software Engineer",
+    title: "Lead Front End Software Engineer",
     company: "Slize Digital",
     logo: "slizedigital.jpeg",
     link: "https://slize.io/",
@@ -198,7 +198,7 @@ export const workExperience = [
   },
   {
     id: "5",
-    title: "Lead Frontend Software Engineer",
+    title: "Lead Front End Software Engineer",
     company: "Kantar Consulting Virtual Reality",
     logo: "kantar-consulting.png",
     link: "https://consulting.kantar.com",
@@ -243,7 +243,7 @@ export const workExperience = [
   },
   {
     id: "3",
-    title: "Senior Frontend Software Engineer",
+    title: "Senior Front End Software Engineer",
     company: "Ciklum",
     logo: "ciklum.png",
     link: "https://www.ciklum.com",
@@ -263,7 +263,7 @@ export const workExperience = [
   },
   {
     id: "2",
-    title: "Frontend Software Engineer",
+    title: "Front End Software Engineer",
     company: "Ciklum",
     logo: "ciklum.png",
     link: "https://www.ciklum.com",

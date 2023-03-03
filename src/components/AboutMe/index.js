@@ -6,7 +6,7 @@ const AboutMe = () => {
     return (
         <Section title="Who I am">
             <p>
-                Energetic and skilled Technical and Team Leader has a keen ability for software development and supervision. Highly organized and motivated with excellent architectural, analytical and problem-solving skills. Exceptional at breaking down engineering initiatives into tactical plans processes to release successful innovation solutions and achieve project goals. Strong mentor and coach, skilled in inspiring confidence and leading by example.
+                Staff Front End Software Engineer with over 12 years of experience working with web technologies for millions of people. Passionate about increasing performance, quality, and architecture scalability for customers’ products. Enjoy organizing teamwork via reachable goals, great relationships, and a “lead by example” leadership style. Easy to learn new technologies, processes, and best practices.
             </p>
         </Section>
     );
